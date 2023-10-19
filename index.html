@@ -6,13 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <select>
+    <select name="product-choice" onclick="func()">
         <option value="1">qwe</option>
         <option value="2">asd</option>
         <option value="3">zxc</option>
     </select>
 
     <div id="option-choices"></div>
-    <div id="result"></div>
+    
+    <p>введите количество
+    <input id="amount-of-products" type="number" min="1" max="10"></p>
+
+    <input type="button" value="рассчитать">
+    <div id="result">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

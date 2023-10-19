@@ -6,18 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <select name="product-choice" onclick="func()">
-        <option value="1">qwe</option>
-        <option value="2">asd</option>
-        <option value="3">zxc</option>
+    <select name="product-choice" onclick="change()">
+        покрытие
+        <option value="1">эстетическое</option>
+        <option value="2">защитное</option>
+        <option value="3">мягкая</option>
     </select>
 
     <div id="option-choices"></div>
     
     <p>введите количество
-    <input id="amount-of-products" type="number" min="1" max="10"></p>
+    <input id="amount-of-products" type="number" min="1" max="10" value="1"></p>
 
-    <input type="button" value="рассчитать">
+    <input type="button" value="рассчитать" onclick="getSum()">
     <div id="result">
     </div>
 
